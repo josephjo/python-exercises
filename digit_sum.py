@@ -11,4 +11,5 @@ def digit_sum(n):
 
     print "The sum of the digits of %s is %s." % (n, calc)
 
+
 digit_sum(434)
