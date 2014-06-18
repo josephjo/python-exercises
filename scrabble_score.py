@@ -7,9 +7,8 @@ def scrabble_score(word):
              "x": 8, "z": 10}
     total = 0
 
-    for key in word:
-        key = key.lower()
-        total = total + score[key]
+    for letter in word:
+        total = total + score[letter.lower()]
 
     print "\"%s\" will earn you %s points in Scrabble." % (word, total)
 
