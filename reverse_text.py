@@ -8,7 +8,7 @@ def reverse_text(text):
             reversed_array.append(text[-y])
             y = y + 1
 
-    reverse = ''.join(reversed_array)
+    reverse = "".join(reversed_array)
     print reverse
 
 
