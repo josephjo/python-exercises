@@ -13,6 +13,17 @@ def grades_average(grades):
     average = sum_of_grades / float(len(grades))
     return average
 
+""" Returns the variance of list of grades """
+def grades_variance(grades):
+    average = grades_average(grades)
+    variance = 0
+
+    for grade in grades:
+        variance = variance + (average - grade) ** 2
+        result = variance / len(grades)
+    return result
+
 
 print "The sum of all the grades is %s." % ("%.2f" % grades_sum(grades))
 print "The average of all the grades is %s." % ("%.2f" % grades_average(grades))
+print "The variance of all the grades is %s." % ("%.2f" % grades_variance(grades))
