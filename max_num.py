@@ -29,3 +29,17 @@ print max_num_three(1, 1, 1)
 print max_num_three(3, 1, 1)
 print max_num_three(21, 90, 11)
 print max_num_three(1, 2, 6)
+
+
+""" Give a list of numbers, figure out which is greater """
+def max_in_list(list):
+    max = 0
+
+    for num in list:
+        if max < num:
+            max = num
+
+        return "%s is the greater number." % max
+
+
+print max_in_list([90, 2, 13, 4, 0, 999])
