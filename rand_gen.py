@@ -9,6 +9,7 @@ def rand_gen(num):
     for i in range(num):
         rand += random.choice(string.letters)
 
+    rand_string = random.shuffle(rand)
     rand_string = "".join(rand)
     return rand_string
 
