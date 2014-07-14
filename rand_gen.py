@@ -7,6 +7,9 @@ def rand_gen(num):
     rand = []
 
     for i in range(num):
+        rand += str(random.randint(0, 9))
+
+    for j in range(num):
         rand += random.choice(string.letters)
 
     rand_string = random.shuffle(rand)
