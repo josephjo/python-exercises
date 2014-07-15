@@ -3,21 +3,22 @@ import string
 
 
 """ Python function to generate text via random chars and ints """
-def rand_gen(num):
+def rand_gen(length):
     rand = []
 
-    for i in range(num):
+    for i in range(length * 2):
         rand += str(random.randint(0, 9))
 
-    for j in range(num):
+    for j in range(length * 2):
         rand += random.choice(string.letters)
 
-    for k in range(num / 2):
+    for k in range(length):
         rand += random.choice(string.punctuation)
 
     rand_string = random.shuffle(rand)
-    rand_string = "".join(rand)
+
+    rand_string = "".join(rand[:length])
     return rand_string
 
 
-print rand_gen(4)
+print rand_gen(10)
