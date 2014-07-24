@@ -9,4 +9,5 @@ def find_longest_word(list):
 
     print max_word, "is the longest word with %s letters." % len(word)
 
+
 find_longest_word(["cat", "dog", "giraffe"])
