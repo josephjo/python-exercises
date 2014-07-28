@@ -6,3 +6,4 @@ def censor(text, word):
 
 
 censor("Taco Bell Warns Employees Against Directly Exposing Skin To Food.", "Taco Bell")
+censor("ttttttattttt", "t")
