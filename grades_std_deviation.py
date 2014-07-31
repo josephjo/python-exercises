@@ -35,7 +35,6 @@ class GradesStdDeviation(object):
         return variance
 
 
-
 std = GradesStdDeviation()
 
 print "The sum of all the grades is %s." % ("%.2f" % std.grades_sum(grades))
