@@ -1,4 +1,3 @@
-python-exercises
-================
+# python-exercises
 
 Exercises to learn Python.
